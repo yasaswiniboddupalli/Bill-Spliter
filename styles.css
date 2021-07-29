@@ -271,7 +271,20 @@ body {
 }
 
 .results .reset {
-  border: 2px solid white;
   grid-column: span 4;
+}
+
+.results .reset button {
+  background-color: #7f9c9f;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 18px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: #5e7a7d;
+  border: none;
+  border-radius: 10px;
+  margin: 70px 0 0 0;
 }
 /*# sourceMappingURL=styles.css.map */
