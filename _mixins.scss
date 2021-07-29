@@ -37,10 +37,13 @@
     //border:2px solid white;
         grid-column: span 2;
         text-align:right;
+       
+        
         p{
             font-size: $font-output;
             font-weight:$weight3;
             color:$strong_cyan;
+            
         }
             
 }
@@ -58,4 +61,11 @@
             color:$dark_grayish_cyan_2;
             font-size:$font-sub;
         }
+}
+
+////media query////
+@mixin mq($arg){
+    @media screen and (max-width:$arg){
+        @content;
+    }
 }

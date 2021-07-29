@@ -26,6 +26,18 @@ body {
           justify-content: center;
 }
 
+@media screen and (max-width: 350px) {
+  .logo {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin-bottom: 8%;
+  }
+}
+
 .cal {
   background-color: white;
   width: 80%;
@@ -38,6 +50,20 @@ body {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   padding: 2.5%;
+}
+
+@media screen and (max-width: 600px) {
+  .cal {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5%;
+  }
 }
 
 .cal .user_input {
@@ -119,6 +145,13 @@ body {
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
   padding: 10px 10px 10px 0px;
+}
+
+@media screen and (max-width: 350px) {
+  .cal .user_input .tip .tipButtons {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .cal .user_input .tip .tipButtons .form_label {
@@ -216,6 +249,12 @@ body {
   grid-gap: 15px;
 }
 
+@media screen and (max-width: 600px) {
+  .results {
+    margin-top: 4%;
+  }
+}
+
 .results .label_tip {
   grid-column: span 2;
   text-align: left;
@@ -238,7 +277,7 @@ body {
 }
 
 .results .output_tip p {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   color: #26c0ab;
 }
@@ -265,7 +304,7 @@ body {
 }
 
 .results .output_total p {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   color: #26c0ab;
 }
@@ -279,12 +318,18 @@ body {
   width: 100%;
   font-size: 24px;
   text-transform: uppercase;
-  padding: 18px;
+  padding: 10px;
   font-family: "Space Mono", monospace;
   font-weight: 700;
   color: #5e7a7d;
   border: none;
   border-radius: 10px;
   margin: 70px 0 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .results .reset button {
+    margin: 30px 0 0 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
