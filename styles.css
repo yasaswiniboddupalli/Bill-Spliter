@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-input[type=text], select {
-  all: unset;
-}
+/* input[type=text],select{
+    all:unset;
+} */
 /*# sourceMappingURL=styles.css.map */

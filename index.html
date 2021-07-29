@@ -4,11 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Splitter</title>
 </head>
 <body>
+    <div class="logo"><img src="images/logo.svg" alt="logo"></div>
+    <div class="cal">
+        <div class="user_input">
+            <form class="form">
+               <div class="bill">
+                <label for="Bill">Bill</label>
+                <input type="text" id="bill" name="bill">
+                <i class="fas fa-dollar-sign"></i>
+               </div>
+               <div class="tip">
+                <input type="radio" name="selectTip" class="form_radio" id="1">
+                <label for="1" class="form_label">5%</label>
+        
+                <input type="radio" name="selectTip" class="form_radio" id="2">
+                <label for="2" class="form_label">10%</label>
+
+                <input type="radio" name="selectTip" class="form_radio" id="3">
+                <label for="3" class="form_label">15%</label>
+
+                <input type="radio" name="selectTip" class="form_radio" id="4">
+                <label for="4" class="form_label">20%</label>
+
+                <input type="radio" name="selectTip" class="form_radio" id="5">
+                <label for="5" class="form_label">25%</label>
+
+                <input type="radio" name="selectTip" class="form_radio" id="6">
+                <label for="6" class="form_label">Custom</label>
+               </div>
+               <div class="numPeople">
+                <label for="people">Number of People</label>
+                <input type="text" id="people" name="people">
+                <i class="fas fa-user"></i>
+               </div>
+            </form>
+        </div>
+        <!--results-->
+        <div class="results">
+            <div class="label">
+                <p class="title">Tip Amount</p>
+                <p class="subtitle">/ person</p>
+            </div>
+            <div class="output">
+                <p class="tipAmount">$4.27</p>
+            </div>
+            <div class="label">
+                <p class="title">Total</p>
+                <p class="subtitle">/ person</p>
+            </div>
+            <div class="output">
+                <p class="Total">$32.79</p>
+            </div>
+        </div>
+        <div class="reset">
+            <button>Reset</button>
+        </div>
+    </div>
 
 <script src="app.js"></script>
 </body>
