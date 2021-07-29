@@ -9,8 +9,29 @@ body{
 }
 .logo{
     border:2px solid green;
-    margin:8% 0 4% 0;
+    margin:6% 0 4% 0;
     display:grid;
     align-items: center;
     justify-content: center;
+}
+.cal{
+    background-color:$white;
+    width:80%;
+    margin:0 auto;
+    border-radius: 25px;
+    box-shadow:0 4px 8px $dark_grayish_cyan_1;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:2.5%;
+
+    .user_input{
+        grid-column: 1/2;
+        border:2px dashed orange;
+
+    }
+    .results{
+        grid-column: 3/4;
+        border:2px solid green;
+
+    }
 }

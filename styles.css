@@ -16,7 +16,7 @@ body {
 
 .logo {
   border: 2px solid green;
-  margin: 8% 0 4% 0;
+  margin: 6% 0 4% 0;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -25,5 +25,33 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.cal {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 4px 8px #5e7a7d;
+          box-shadow: 0 4px 8px #5e7a7d;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 2.5%;
+}
+
+.cal .user_input {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  border: 2px dashed orange;
+}
+
+.cal .results {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  border: 2px solid green;
 }
 /*# sourceMappingURL=styles.css.map */
