@@ -13,4 +13,17 @@ body {
   font-size: 24px;
   background-color: #c5e4e7;
 }
+
+.logo {
+  border: 2px solid green;
+  margin: 8% 0 4% 0;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=styles.css.map */

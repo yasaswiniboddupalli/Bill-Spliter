@@ -7,3 +7,10 @@ body{
     font-size:$font-size;
     background-color: $light_grayish_cyan_1;
 }
+.logo{
+    border:2px solid green;
+    margin:8% 0 4% 0;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
