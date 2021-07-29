@@ -55,8 +55,9 @@ body {
 }
 
 .cal .user_input .bill label {
-  font-weight: 400;
+  font-weight: 500;
   color: #5e7a7d;
+  font-size: 18px;
 }
 
 .cal .user_input .bill input[type=text] {
@@ -101,14 +102,14 @@ body {
 }
 
 .cal .user_input .tip {
-  border: 2px solid black;
   margin-top: 4%;
   margin-bottom: 4%;
 }
 
 .cal .user_input .tip .tip_label {
-  font-weight: 400;
+  font-weight: 500;
   color: #5e7a7d;
+  font-size: 18px;
   display: block;
 }
 
@@ -143,8 +144,62 @@ body {
 }
 
 .cal .user_input .tip .tipButtons .form_radio:checked + .form_label {
-  background: grey;
-  color: wheat;
+  background: #26c0ab;
+  color: #00494d;
+  border: none;
+}
+
+.cal .user_input .numPeople {
+  position: relative;
+  padding-bottom: 2%;
+  padding-right: 2%;
+}
+
+.cal .user_input .numPeople label {
+  font-weight: 500;
+  color: #5e7a7d;
+  font-size: 18px;
+}
+
+.cal .user_input .numPeople input[type=text] {
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 1.5rem;
+  color: #00494d;
+  font-weight: 700;
+  background-color: #f4fafa;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.cal .user_input .numPeople input[type=text]:focus {
+  border: 1px solid #00494d;
+}
+
+.cal .user_input .numPeople input[type=text]::-webkit-input-placeholder {
+  color: #c5e4e7;
+}
+
+.cal .user_input .numPeople input[type=text]:-ms-input-placeholder {
+  color: #c5e4e7;
+}
+
+.cal .user_input .numPeople input[type=text]::-ms-input-placeholder {
+  color: #c5e4e7;
+}
+
+.cal .user_input .numPeople input[type=text]::placeholder {
+  color: #c5e4e7;
+}
+
+.cal .user_input .numPeople i {
+  position: absolute;
+  left: 5px;
+  top: 63px;
+  color: #c5e4e7;
 }
 
 .cal .results {

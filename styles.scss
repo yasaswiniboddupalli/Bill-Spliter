@@ -47,7 +47,7 @@ body{
         }
         //styles for tip
         .tip{
-            border:2px solid black;
+            //border:2px solid black;
             margin-top:4%;
             margin-bottom:4%;
             
@@ -80,13 +80,29 @@ body{
                 display:none;
             }
             .form_radio:checked + .form_label{
-                background:grey;
-                color:wheat;
+                background:$strong_cyan;
+                color:$very_dark_cyan;
+                border:none;
             }
            }
    
         }
         //styles for people
+        .numPeople{
+            position:relative;
+            padding-bottom:2%;
+            padding-right:2%;
+            label{
+                @include label;
+                //font-size:20px;
+            }
+            input[type=text]{
+                @include input;
+            }
+            i{
+               @include i;
+            }
+        }
 
     }
     .results{

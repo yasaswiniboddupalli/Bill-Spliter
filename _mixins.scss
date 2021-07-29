@@ -1,6 +1,7 @@
 @mixin label{
-    font-weight: $weight1;
+    font-weight: $weight2;
     color:$dark_grayish_cyan_1;
+    font-size: $font-label;
 }
 
 @mixin input{
