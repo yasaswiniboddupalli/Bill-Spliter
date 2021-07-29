@@ -27,14 +27,14 @@
 
 @mixin i{
     position:absolute;
-    left:5px;
+    left:15px;
     top:63px;
     color:$light_grayish_cyan_1;
 
 }
 
 @mixin output{
-    border:2px solid white;
+    //border:2px solid white;
         grid-column: span 2;
         text-align:right;
         p{
@@ -43,4 +43,19 @@
             color:$strong_cyan;
         }
             
+}
+
+@mixin output_label{
+    //border:2px solid white;
+        grid-column: span 2;
+        text-align:left;
+        .title{
+            font-size: $font-label;
+            font-weight:$weight3;
+            color:$light_grayish_cyan_2;
+        }
+        .subtitle{
+            color:$dark_grayish_cyan_2;
+            font-size:$font-sub;
+        }
 }
