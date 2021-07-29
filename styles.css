@@ -8,4 +8,9 @@
 /* input[type=text],select{
     all:unset;
 } */
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  background-color: #c5e4e7;
+}
 /*# sourceMappingURL=styles.css.map */
