@@ -1,19 +1,33 @@
-@mixin input{
-    input[type=text], select{
-        all:unset;
-        width: 100%;
-        font-family: $font-family;
-        font-size:1.2rem;
-        padding: 12px;
-        border: 1px solid green;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
+@mixin label{
+    font-weight: $weight1;
+    color:$dark_grayish_cyan_1;
+}
 
-        &:focus{
-            border:3px solid black;
-        }
-      } 
+@mixin input{
+    width:100%;
+    font-family: $font-family;
+    font-size:1.5rem;
+    color:$very_dark_cyan;
+    font-weight: $weight3;
+    background-color: $light_grayish_cyan_2;
+    border-radius:5px;
+    border:none;
+    padding:10px;
+    margin-top:10px;
+    text-align: right;
+
+    &:focus{
+        border:1px solid $very_dark_cyan;
+    }
+    &::placeholder{
+        color:$light_grayish_cyan_1;
+    }
+}
+
+@mixin i{
+    position:absolute;
+    left:5px;
+    top:63px;
+    color:$light_grayish_cyan_1;
+
 }

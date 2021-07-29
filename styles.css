@@ -15,7 +15,6 @@ body {
 }
 
 .logo {
-  border: 2px solid green;
   margin: 6% 0 4% 0;
   display: -ms-grid;
   display: grid;
@@ -30,7 +29,7 @@ body {
 .cal {
   background-color: white;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   border-radius: 25px;
   -webkit-box-shadow: 0 4px 8px #5e7a7d;
           box-shadow: 0 4px 8px #5e7a7d;
@@ -50,7 +49,6 @@ body {
 }
 
 .cal .user_input .bill {
-  border: 2px solid blue;
   position: relative;
   padding-bottom: 2%;
   padding-right: 2%;
@@ -58,7 +56,7 @@ body {
 
 .cal .user_input .bill label {
   font-weight: 400;
-  color: #00494d;
+  color: #5e7a7d;
 }
 
 .cal .user_input .bill input[type=text] {
@@ -100,6 +98,53 @@ body {
   left: 5px;
   top: 63px;
   color: #c5e4e7;
+}
+
+.cal .user_input .tip {
+  border: 2px solid black;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.cal .user_input .tip .tip_label {
+  font-weight: 400;
+  color: #5e7a7d;
+  display: block;
+}
+
+.cal .user_input .tip .tipButtons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  padding: 10px 10px 10px 0px;
+}
+
+.cal .user_input .tip .tipButtons .form_label {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #00494d;
+  color: white;
+  font-weight: 700;
+}
+
+.cal .user_input .tip .tipButtons .custom {
+  background-color: #f4fafa;
+  color: #5e7a7d;
+  font-weight: 700;
+  border: none;
+}
+
+.cal .user_input .tip .tipButtons .form_radio {
+  display: none;
+}
+
+.cal .user_input .tip .tipButtons .form_radio:checked + .form_label {
+  background: grey;
+  color: wheat;
 }
 
 .cal .results {
