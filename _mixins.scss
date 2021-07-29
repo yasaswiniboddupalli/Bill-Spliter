@@ -32,3 +32,15 @@
     color:$light_grayish_cyan_1;
 
 }
+
+@mixin output{
+    border:2px solid white;
+        grid-column: span 2;
+        text-align:right;
+        p{
+            font-size: $font-output;
+            font-weight:$weight3;
+            color:$strong_cyan;
+        }
+            
+}

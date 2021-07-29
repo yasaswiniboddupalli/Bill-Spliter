@@ -206,4 +206,59 @@ body {
   grid-column: 3/-1;
   border: 2px solid green;
 }
+
+.results {
+  background-color: #00494d;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  grid-gap: 15px;
+}
+
+.results .label_tip {
+  border: 2px solid white;
+  grid-column: span 2;
+  text-align: left;
+}
+
+.results .label_tip .title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.results .output_tip {
+  border: 2px solid white;
+  grid-column: span 2;
+  text-align: right;
+}
+
+.results .output_tip p {
+  font-size: 40px;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+.results .label_total {
+  border: 2px solid white;
+  grid-column: span 2;
+}
+
+.results .output_total {
+  border: 2px solid white;
+  grid-column: span 2;
+  text-align: right;
+}
+
+.results .output_total p {
+  font-size: 40px;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+.results .reset {
+  border: 2px solid white;
+  grid-column: span 4;
+}
 /*# sourceMappingURL=styles.css.map */

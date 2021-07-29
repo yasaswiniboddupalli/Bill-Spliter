@@ -111,3 +111,36 @@ body{
 
     }
 }
+
+//results side styling
+.results{
+    background-color: $very_dark_cyan;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:10px;
+    grid-gap:15px;
+    .label_tip{
+        border:2px solid white;
+        grid-column: span 2;
+        text-align:left;
+        .title{
+            font-size: $font-label;
+            font-weight:$weight3;
+        }
+    }
+    .output_tip{
+        @include output;
+      
+    }
+    .label_total{
+        border:2px solid white;
+        grid-column: span 2;
+    }
+    .output_total{
+        @include output;
+    }
+    .reset{
+        border:2px solid white;
+        grid-column: span 4;
+    }
+}
