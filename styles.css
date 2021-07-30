@@ -170,6 +170,7 @@ body {
                 font-weight: $weight3;
                 border:none; */
   all: unset;
+  padding-right: 10px;
   grid-column: span 1;
   font-family: "Space Mono", monospace;
   font-size: 24px;

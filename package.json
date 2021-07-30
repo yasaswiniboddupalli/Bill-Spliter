@@ -1,7 +1,6 @@
 {
-  "name": "Bill_Spliter",
+  "name": "bill_spliter",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -18,6 +17,10 @@
   },
   "homepage": "https://github.com/yasaswiniboddupalli/Bill-Spliter#readme",
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
     "jest": "^27.0.6"
-  }
+  },
+  "dependencies": {},
+  "description": ""
 }
