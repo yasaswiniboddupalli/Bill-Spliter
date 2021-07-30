@@ -86,7 +86,8 @@ body {
 }
 
 .cal .user_input .bill input[type=text] {
-  width: 100%;
+  all: unset;
+  width: 95%;
   font-family: "Space Mono", monospace;
   font-size: 1.5rem;
   color: #00494d;
@@ -100,7 +101,7 @@ body {
 }
 
 .cal .user_input .bill input[type=text]:focus {
-  border: 1px solid #00494d;
+  border: 3px solid #00494d;
 }
 
 .cal .user_input .bill input[type=text]::-webkit-input-placeholder {
@@ -141,22 +142,21 @@ body {
 .cal .user_input .tip .tipButtons {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (minmax(30%, auto))[3];
+      grid-template-columns: repeat(3, minmax(30%, auto));
   grid-gap: 15px;
   padding: 10px 10px 10px 0px;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 600px) {
   .cal .user_input .tip .tipButtons {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (minmax(50%, auto))[2];
+        grid-template-columns: repeat(2, minmax(50%, auto));
   }
 }
 
 .cal .user_input .tip .tipButtons .form_label {
-  display: inline-block;
-  border: 1px solid;
+  grid-column: span 1;
   border-radius: 5px;
   text-align: center;
   background-color: #00494d;
@@ -165,10 +165,48 @@ body {
 }
 
 .cal .user_input .tip .tipButtons .custom {
-  background-color: #f4fafa;
-  color: #5e7a7d;
+  /* background-color:$light_grayish_cyan_2;
+                color:$dark_grayish_cyan_1;
+                font-weight: $weight3;
+                border:none; */
+  all: unset;
+  grid-column: span 1;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  text-align: right;
+  color: #00494d;
   font-weight: 700;
+  background-color: #f4fafa;
+  border-radius: 5px;
   border: none;
+}
+
+.cal .user_input .tip .tipButtons .custom:focus {
+  border: 3px solid #00494d;
+}
+
+.cal .user_input .tip .tipButtons .custom::-webkit-input-placeholder {
+  color: #5e7a7d;
+  font-size: 24px;
+  text-align: center;
+}
+
+.cal .user_input .tip .tipButtons .custom:-ms-input-placeholder {
+  color: #5e7a7d;
+  font-size: 24px;
+  text-align: center;
+}
+
+.cal .user_input .tip .tipButtons .custom::-ms-input-placeholder {
+  color: #5e7a7d;
+  font-size: 24px;
+  text-align: center;
+}
+
+.cal .user_input .tip .tipButtons .custom::placeholder {
+  color: #5e7a7d;
+  font-size: 24px;
+  text-align: center;
 }
 
 .cal .user_input .tip .tipButtons .form_radio {
@@ -194,7 +232,8 @@ body {
 }
 
 .cal .user_input .numPeople input[type=text] {
-  width: 100%;
+  all: unset;
+  width: 95%;
   font-family: "Space Mono", monospace;
   font-size: 1.5rem;
   color: #00494d;
@@ -208,7 +247,7 @@ body {
 }
 
 .cal .user_input .numPeople input[type=text]:focus {
-  border: 1px solid #00494d;
+  border: 3px solid #00494d;
 }
 
 .cal .user_input .numPeople input[type=text]::-webkit-input-placeholder {

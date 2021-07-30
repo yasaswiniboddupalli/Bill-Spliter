@@ -71,27 +71,49 @@ body{
            .tipButtons{
                //border:2px dashed yellow;
                display:grid;
-               grid-template-columns: repeat(3,1fr);
+               grid-template-columns: repeat(3,minmax(30%,auto));
                grid-gap:15px;
                padding:10px 10px 10px 0px;
 
-               @include mq(350px){
-                   grid-template-columns: repeat(2,1fr);
+               @include mq(600px){
+                   grid-template-columns: repeat(2,minmax(50%,auto));
                }
             .form_label{
-                display:inline-block;
-                border:1px solid;
+                grid-column: span 1;
+                //display:inline-block;
+               // border:1px solid;
                 border-radius:5px;
                 text-align: center;
                 background-color: $very_dark_cyan;
                 color:$white;
                 font-weight: $weight3;
+                
             }
             .custom{
-                background-color:$light_grayish_cyan_2;
+                /* background-color:$light_grayish_cyan_2;
                 color:$dark_grayish_cyan_1;
                 font-weight: $weight3;
+                border:none; */
+               // display:inline-block;
+              // width:180px;
+              all:unset;
+               grid-column: span 1;
+                font-family: $font-family;
+                font-size:$font-size;
+                text-align: right;
+                color:$very_dark_cyan;
+                font-weight: $weight3;
+                background-color: $light_grayish_cyan_2;
+                border-radius:5px;
                 border:none;
+                &:focus{
+                    border:3px solid $very_dark_cyan;
+                }
+                &::placeholder{
+                    color:$dark_grayish_cyan_1;
+                    font-size: $font-size;
+                    text-align: center;
+                }
             }
             .form_radio{
                 display:none;

@@ -15,7 +15,7 @@
     <div class="logo"><img src="images/logo.svg" alt="logo"></div>
     <div class="cal">
         <div class="user_input">
-            <form class="form">
+            <!--<form class="form">-->
                <div class="bill">
                 
                 <label for="Bill">Bill</label>
@@ -27,6 +27,7 @@
                <div class="tip">
                 <label for="tip" class="tip_label">Select Tip %</label>
                 <!--tip buttons-->
+                <form>
                 <div class="tipButtons">
                 <input type="radio" name="selectTip" class="form_radio" value="5" id="1">
                 <label for="1" class="form_label">5%</label>
@@ -43,9 +44,10 @@
                 <input type="radio" name="selectTip" class="form_radio" value="25" id="5">
                 <label for="5" class="form_label">25%</label>
 
-                <input type="radio" name="selectTip" class="form_radio" value="" id="6">
-                <label for="6" class="form_label custom">Custom</label>
+                <input type="input" name="custom" class="custom" value="" id="custom" placeholder="Custom">
+                <!--<label for="custom" class="form_label">Custom</label>-->
                 </div>
+                </form>
                 <!--end of tip buttons-->
                </div>
                <!--end of tip-->
@@ -54,7 +56,7 @@
                 <input type="text" id="people" name="people" placeholder="0">
                 <i class="fas fa-user"></i>
                </div>
-            </form>
+           <!--</form>--> 
         </div>
         <!--results-->
         <div class="results">
